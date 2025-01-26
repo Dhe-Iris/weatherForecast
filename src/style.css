@@ -1,23 +1,33 @@
 body {
-  background-color: #f9f7fe;
-  font-family: "Roboto", sans-serif;
+  background-color: #efeef4;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 a {
-  color: #885df1;
+  color: #c04362;
+  text-decoration: none;
+  transition: all 0.3ms ease-in-out;
+}
+
+a:hover {
+  color: #800080;
 }
 
 .weather-app {
   background: white;
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
   padding: 30px;
 }
 
 header {
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid #efeef4;
   padding: 0 0 30px 0;
 }
 
@@ -31,13 +41,24 @@ header {
 }
 
 .search-form-button {
-  background: #885df1;
+  background-color: #800080;
   padding: 15px 30px;
-  border: none;
   font-size: 16px;
-  margin-left: 5px;
+  border: none;
   border-radius: 6px;
-  color: white;
+  margin-left: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 1.3ms ease-in-out;
+}
+
+.search-form-button:hover {
+  background-color: #b944b9;
+  color: #ffffff;
+}
+.search-form-button:active {
+  transform: scale(0.95); /* Example: Shrinks the button when clicked */
+  background-color: #c04362; /* Change the background color on click */
 }
 
 main {
@@ -117,7 +138,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
+  border-top: 1px solid #efeef4;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
