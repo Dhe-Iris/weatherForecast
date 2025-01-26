@@ -158,3 +158,24 @@ footer {
   /* color: rgba(0, 0, 0, 0.6); */
   color: #d9d2e9;
 }
+
+@media screen and (max-width: 768px) {
+  .search-form-input {
+    width: 60%;
+  }
+  /* Hide the spilled day */
+  .weather-app {
+    overflow: hidden; /* Ensure content stays within the container */
+  }
+}
+
+.weather-forecast {
+  margin: 25px; /* Add spacing between items */
+}
+
+/* Reduce font size for better fit */
+.weather-forecast-date,
+.weather-forecast-icon,
+.weather-forecast-temperatures {
+  font-size: 12px; /* Adjust font size for smaller screens */
+}
