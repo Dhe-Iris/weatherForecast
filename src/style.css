@@ -161,7 +161,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .search-form-input {
-    width: 60%;
+    width: 50%;
   }
   /* Hide the spilled day */
   .weather-app {
